@@ -1,3 +1,4 @@
+
 ## run_analysis.txt
 #   A script analysing the Human Activity Recognition Using Smartphones dataset,
 #   by performing the following actions
@@ -72,9 +73,9 @@ colNames <- colnames(X)
 # Descriptive labels
 colNames <- gsub("Acc",".Accelerator.", colNames)
 colNames <- gsub("Gyro",".Gyroscope.", colNames)
+colNames <- gsub("Mag",".Magnitude", colNames)
 colNames <- gsub("^t","Time.", colNames)
 colNames <- gsub("^f","Frequency.", colNames)
-colNames <- gsub("mag","Magnitude", colNames)
 # Clean column names
 colNames <- gsub("\\(\\)",'', colNames)
 colNames <- gsub("[^a-zA-Z1-9_\\.]",'.', colNames)
@@ -88,11 +89,11 @@ colnames(X) <- colNames
 # First, melt data with subjectid and activity as id and measures as variables
 newX <- melt(X,
         id.vars = c("subjectid", "activity"),
-        variable.name = "measure")
+        variable.name = "measure.name")
 # Then, group by subjectid, activity, measure and compute the value mean
 res <- newX %>%
         group_by(subjectid, activity, measure) %>%
-        summarize(measure.mean=mean(value))
+        summarize(measure.average=mean(value))
 
 # Save summary file
 write.table(res, "analysis.txt", row.names = FALSE)
