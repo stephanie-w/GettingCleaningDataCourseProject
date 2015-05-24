@@ -29,4 +29,4 @@ The data computed at ths last step will be available in your working directory i
 
 ## Code Book
 
-A code book that describes the variables, the data, and transformations performed to clean up the data is available in the `CodeBook.md` file.
+A code book that describes the variables, the data, and transformations performed to clean up the data is available in the [CodeBook.md](https://github.com/stephanie-w/GettingCleaningDataCourseProject/blob/master/CodeBook.md) file.
