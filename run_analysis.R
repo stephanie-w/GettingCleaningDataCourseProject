@@ -96,5 +96,5 @@ res <- newX %>%
         summarize(measure.average=mean(value))
 
 # Save summary file
-write.table(res, "analysis.txt", row.names = FALSE)
+write.table(res, "tidy_UCI_HAR_dataset.txt", row.names = FALSE)
 

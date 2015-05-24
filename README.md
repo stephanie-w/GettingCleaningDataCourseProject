@@ -25,7 +25,7 @@ The `run_analysis.R` script performs the following steps:
 * Appropriately labels the data set with descriptive variable names. 
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-The data computed at ths last step will be available in your working directory in an `analysis.txt` file.
+The data computed at ths last step will be available in your working directory in an `tidy_UCI_HAR_dataset.txt` file.
 
 ## Code Book
 
