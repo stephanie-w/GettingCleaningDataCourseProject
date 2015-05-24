@@ -1,4 +1,3 @@
-
 ## run_analysis.txt
 #   A script analysing the Human Activity Recognition Using Smartphones dataset,
 #   by performing the following actions
@@ -92,7 +91,7 @@ newX <- melt(X,
         variable.name = "measure.name")
 # Then, group by subjectid, activity, measure and compute the value mean
 res <- newX %>%
-        group_by(subjectid, activity, measure) %>%
+        group_by(subjectid, activity, measure.name) %>%
         summarize(measure.average=mean(value))
 
 # Save summary file
