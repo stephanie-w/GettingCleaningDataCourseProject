@@ -4,12 +4,18 @@ The goal of this project is to prepare tidy data from the `Human Activity Recogn
 
 This dataset represents data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-Here are the data for this project https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+Here are the data for this project [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ## How it works
-* Download https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+* Download [the zipped dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 * unzip the file in your working directory
-* run `run_analysis.R`
+* run `run_analysis.R` with
+
+        > source("run_analysis.R")
+on the command line of R or
+
+        R CMD BATCH run_analysis.R
+
 
 The `run_analysis.R` script performs the following steps:
 
